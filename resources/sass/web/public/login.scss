@@ -1,0 +1,195 @@
+/*************** Form ***************/
+.web-public-login {
+    height: 100%;
+    .web-public-login-row {
+        height: 100%;
+        .web-public-login-image , .web-public-login-form {
+        }
+        .web-public-login-image {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .web-public-login-form {
+
+        }
+    }
+}
+
+/*
+@media (min-width: 300px) { //XS
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 1.5rem;
+                min-height: 14rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 1.5rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 1rem 0rem;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) { //SM
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 1rem;
+                padding: 1.2rem;
+                border-radius: 1.8rem;
+                min-height: 16rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 1.5rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 1rem 0rem;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { //MD
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 1rem;
+                padding: 1.4rem;
+                border-radius: 2rem;
+                min-height: 20rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 2rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 1.2rem 0rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+*/
+@media (min-width: 992px) { //LG
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 2.2rem;
+                min-height: 22rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 2rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 1.5rem 0rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) { //XL
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 2rem;
+                padding: 2rem;
+                border-radius: 2.2rem;
+                min-height: 24rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 3rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 2rem 0rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) { //XXL
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 5rem;
+                padding: 2rem;
+                border-radius: 2.4rem;
+                min-height: 24rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 3rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 2rem 0rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 2048px) { //2K
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 10rem;
+                padding: 2rem;
+                border-radius: 2.8rem;
+                min-height: 28rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 4rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 2.5rem 0rem;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    .web-public-login{
+        .web-public-login-row {
+            .web-public-login-image , .web-public-login-form {
+                margin: 10rem;
+                padding: 2rem;
+                border-radius: 3rem;
+                min-height: 30rem;
+            }
+            .web-public-login-form {
+                p {
+                    margin: 0rem 0rem 4rem 0rem;
+                }
+                input {
+                    margin: 0rem 0rem 2.5rem 0rem;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+*/

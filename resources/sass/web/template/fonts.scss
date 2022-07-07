@@ -1,0 +1,259 @@
+/*************** Font Weights ***************/
+.fw--1{
+    font-weight: 300 !important;;
+}
+.fw-0{
+    font-weight: 400 !important;;
+}
+.fw-1{
+    font-weight: 500 !important;;
+}
+.fw-2{
+    font-weight: 700 !important;;
+}
+
+/*************** Font Sizes ***************/
+/////Multipliers
+$xs: 0.40;
+$sm: 0.50;
+$md: 0.60;
+$lg: 0.62;
+$xl: 0.60;
+$xxl: 0.58;
+$x2l: 0.56;
+$xxxl: 0.54;
+
+/////FS-XS
+$fz_xs: 1.10rem;
+$fz_xs_xs: $fz_xs * $xs;
+$fz_xs_sm: $fz_xs * $sm;
+$fz_xs_md: $fz_xs * $md;
+$fz_xs_lg: $fz_xs * $lg;
+$fz_xs_xl: $fz_xs * $xl;
+$fz_xs_xxl: $fz_xs * $xxl;
+$fz_xs_2k: $fz_xs * $x2l;
+$fz_xs_xxxl: $fz_xs * $xxxl;
+
+/////FS-SM
+$fz_sm: 1.60rem;
+$fz_sm_xs: $fz_sm * $xs;
+$fz_sm_sm: $fz_sm * $sm;
+$fz_sm_md: $fz_sm * $md;
+$fz_sm_lg: $fz_sm * $lg;
+$fz_sm_xl: $fz_sm * $xl;
+$fz_sm_xxl: $fz_sm * $xxl;
+$fz_sm_2k: $fz_sm * $x2l;
+$fz_sm_xxxl: $fz_sm * $xxxl;
+
+/////FS-MD
+$fz_md: 2.10rem;
+$fz_md_xs: $fz_md * $xs;
+$fz_md_sm: $fz_md * $sm;
+$fz_md_md: $fz_md * $md;
+$fz_md_lg: $fz_md * $lg;
+$fz_md_xl: $fz_md * $xl;
+$fz_md_xxl: $fz_md * $xxl;
+$fz_md_2k: $fz_md * $x2l;
+$fz_md_xxxl: $fz_md * $xxxl;
+
+/////FS-LG
+$fz_lg: 2.60rem;
+$fz_lg_xs: $fz_lg * $xs;
+$fz_lg_sm: $fz_lg * $sm;
+$fz_lg_md: $fz_lg * $md;
+$fz_lg_lg: $fz_lg * $lg;
+$fz_lg_xl: $fz_lg * $xl;
+$fz_lg_xxl: $fz_lg * $xxl;
+$fz_lg_2k: $fz_lg * $x2l;
+$fz_lg_xxxl: $fz_lg * $xxxl;
+
+/////FS-XL
+$fz_xl: 3.10rem;
+$fz_xl_xs: $fz_xl * $xs;
+$fz_xl_sm: $fz_xl * $sm;
+$fz_xl_md: $fz_xl * $md;
+$fz_xl_lg: $fz_xl * $lg;
+$fz_xl_xl: $fz_xl * $xl;
+$fz_xl_xxl: $fz_xl * $xxl;
+$fz_xl_2k: $fz_xl * $x2l;
+$fz_xl_xxxl: $fz_xl * $xxxl;
+
+/////FS-XXL
+$fz_xxl: 3.60rem;
+$fz_xxl_xs: $fz_xxl * $xs;
+$fz_xxl_sm: $fz_xxl * $sm;
+$fz_xxl_md: $fz_xxl * $md;
+$fz_xxl_lg: $fz_xxl * $lg;
+$fz_xxl_xl: $fz_xxl * $xl;
+$fz_xxl_xxl: $fz_xxl * $xxl;
+$fz_xxl_2k: $fz_xxl * $x2l;
+$fz_xxl_xxxl: $fz_xxl * $xxxl;
+/*
+@media (min-width: 300px) { // XS
+    .fz-xs {
+        font-size: $fz_xs_xs;
+    }
+    .fz-sm {
+        font-size: $fz_sm_xs;
+    }
+    .fz-md {
+        font-size: $fz_md_xs;
+    }
+    .fz-lg {
+        font-size: $fz_lg_xs;
+    }
+    .fz-xl {
+        font-size: $fz_xl_xs;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_xs;
+    }
+}
+
+@media (min-width: 576px) { //SM
+    .fz-xs {
+        font-size: $fz_xs_sm;
+    }
+    .fz-sm {
+        font-size: $fz_sm_sm;
+    }
+    .fz-md {
+        font-size: $fz_md_sm;
+    }
+    .fz-lg {
+        font-size: $fz_lg_sm;
+    }
+    .fz-xl {
+        font-size: $fz_xl_sm;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_sm;
+    }
+}
+
+@media (min-width: 768px) { //MD
+    .fz-xs {
+        font-size: $fz_xs_md;
+    }
+    .fz-sm {
+        font-size: $fz_sm_md;
+    }
+    .fz-md {
+        font-size: $fz_md_md;
+    }
+    .fz-lg {
+        font-size: $fz_lg_md;
+    }
+    .fz-xl {
+        font-size: $fz_xl_md;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_md;
+    }
+}
+*/
+@media (min-width: 992px) { //LG
+    .fz-xs {
+        font-size: $fz_xs_lg;
+    }
+    .fz-sm {
+        font-size: $fz_sm_lg;
+    }
+    .fz-md {
+        font-size: $fz_md_lg;
+    }
+    .fz-lg {
+        font-size: $fz_lg_lg;
+    }
+    .fz-xl {
+        font-size: $fz_xl_lg;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_lg;
+    }
+}
+
+@media (min-width: 1200px) { //XL
+    .fz-xs {
+        font-size: $fz_xs_xl;
+    }
+    .fz-sm {
+        font-size: $fz_sm_xl;
+    }
+    .fz-md {
+        font-size: $fz_md_xl;
+    }
+    .fz-lg {
+        font-size: $fz_lg_xl;
+    }
+    .fz-xl {
+        font-size: $fz_xl_xl;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_xl;
+    }
+}
+
+@media (min-width: 1400px) { //XXL
+    .fz-xs {
+        font-size: $fz_xs_xxl;
+    }
+    .fz-sm {
+        font-size: $fz_sm_xxl;
+    }
+    .fz-md {
+        font-size: $fz_md_xxl;
+    }
+    .fz-lg {
+        font-size: $fz_lg_xxl;
+    }
+    .fz-xl {
+        font-size: $fz_xl_xxl;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_xxl;
+    }
+}
+
+@media (min-width: 2048px) { //2K
+    .fz-xs {
+        font-size: $fz_xs_2k;
+    }
+    .fz-sm {
+        font-size: $fz_sm_2k;
+    }
+    .fz-md {
+        font-size: $fz_md_2k;
+    }
+    .fz-lg {
+        font-size: $fz_lg_2k;
+    }
+    .fz-xl {
+        font-size: $fz_xl_2k;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_2k;
+    }
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    .fz-xs {
+        font-size: $fz_xs_xxxl;
+    }
+    .fz-sm {
+        font-size: $fz_sm_xxxl;
+    }
+    .fz-md {
+        font-size: $fz_md_xxxl;
+    }
+    .fz-lg {
+        font-size: $fz_lg_xxxl;
+    }
+    .fz-xl {
+        font-size: $fz_xl_xxxl;
+    }
+    .fz-xxl {
+        font-size: $fz_xxl_xxxl;
+    }
+}
+*/

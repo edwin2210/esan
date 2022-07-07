@@ -1,0 +1,45 @@
+/*************** View ***************/
+.web-ht-view {
+    min-height: 100%;
+}
+
+@mixin responsiveView($rowMarginY) {
+    .web-ht-view{
+        .web-ht-view-row {
+            margin: $rowMarginY 0rem;
+        }
+    }
+}
+/*
+@media (min-width: 300px) { //XS
+    @include responsiveView(1rem);
+}
+
+@media (min-width: 576px) { //SM
+    @include responsiveView(1.1rem);
+}
+
+@media (min-width: 768px) { //MD
+    @include responsiveView(1.1rem);
+}
+*/
+@media (min-width: 992px) { //LG
+    @include responsiveView(1.1rem);
+}
+
+@media (min-width: 1200px) { //XL
+    @include responsiveView(1.3rem);
+}
+
+@media (min-width: 1400px) { //XXL
+    @include responsiveView(1.5rem);
+}
+
+@media (min-width: 2048px) { //2K
+    @include responsiveView(2rem);
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    @include responsiveView(2.5rem);
+}
+*/

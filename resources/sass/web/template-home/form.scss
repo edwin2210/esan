@@ -1,0 +1,48 @@
+/*************** Form ***************/
+.web-form {
+    min-height: 100%;
+}
+
+@mixin responsiveView($rowMarginY) {
+    .web-form{
+        .ht-inp {
+            margin: $rowMarginY 0rem;
+        }
+        .ht-slc {
+            margin: $rowMarginY 0rem;
+        }
+    }
+}
+/*
+@media (min-width: 300px) { //XS
+    @include responsiveView(0.4rem);
+}
+
+@media (min-width: 576px) { //SM
+    @include responsiveView(0.4rem);
+}
+
+@media (min-width: 768px) { //MD
+    @include responsiveView(0.5rem);
+}
+*/
+@media (min-width: 992px) { //LG
+    @include responsiveView(0.6rem);
+}
+
+@media (min-width: 1200px) { //XL
+    @include responsiveView(0.7rem);
+}
+
+@media (min-width: 1400px) { //XXL
+    @include responsiveView(0.8rem);
+}
+
+@media (min-width: 2048px) { //2K
+    @include responsiveView(1rem);
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    @include responsiveView(1.2rem);
+}
+*/

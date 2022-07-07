@@ -1,0 +1,70 @@
+/*************** Container ***************/
+.web-container {
+    min-height: 100% !important;
+    .web-container-row {
+        min-height: 100% !important;
+        .web-container-menu {
+            min-height: 100% !important;
+        }
+        .web-container-content {
+            min-height: 100% !important;
+            overflow-y: hidden;
+        }
+    }
+}
+
+@mixin responsiveMenu($padding, $imgSize, $buttonMarginY) {
+    .web-container {
+        .web-container-row {
+            min-height: 100vh !important;
+            .web-container-menu {
+                padding: $padding;
+                img {
+                    width: $imgSize;
+                    height: $imgSize;
+                }
+                button {
+                    margin: $buttonMarginY 0rem;
+                }
+                min-height: 100vh !important;
+            }
+            .web-container-content {
+                padding: $padding;
+                min-height: 100vh !important;
+            }
+        }
+    }
+}
+/*
+@media (min-width: 300px) { //XS
+    @include responsiveMenu(1rem, 10rem, 0.6rem);
+}
+
+@media (min-width: 576px) { //SM
+    @include responsiveMenu(1rem, 12rem, 0.8rem);
+}
+
+@media (min-width: 768px) { //MD
+    @include responsiveMenu(1rem, 6rem, 0.8rem);
+}
+*/
+@media (min-width: 992px) { //LG
+    @include responsiveMenu(1rem, 7rem, 0.8rem);
+}
+
+@media (min-width: 1200px) { //XL
+    @include responsiveMenu(1rem, 8rem, 1rem);
+}
+
+@media (min-width: 1400px) { //XXL
+    @include responsiveMenu(1rem, 8rem, 1.4rem);
+}
+
+@media (min-width: 2048px) { //2K
+    @include responsiveMenu(1rem, 10rem, 1.6rem);
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    @include responsiveMenu(1rem, 12rem, 1.8rem);
+}
+*/

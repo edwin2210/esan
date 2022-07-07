@@ -1,0 +1,162 @@
+/**************************************** Colors ****************************************/
+/////Colors
+$clrRed: rgba(228,0,0,1);
+$clrOrange: rgba(237,133,60,1);
+$clrLGray: rgba(247,247,247,1);
+$clrGray: rgba(220,220,220,1);
+$clrLocked: rgba(180,180,180,1);
+$clrDGray: rgba(85,85,85,1);
+
+/////Backgrounds
+.color-bg-red {
+    background: $clrRed;
+}
+.color-bg-orange {
+    background: $clrOrange;
+}
+.color-bg-lgray {
+    background: $clrLGray;
+}
+.color-bg-gray {
+    background: $clrGray;
+}
+.color-bg-dgray {
+    background: $clrDGray;
+}
+.color-bg-locked {
+    background: $clrLocked;
+}
+.color-bg-trans {
+    background-color: transparent;
+}
+
+/////Fonts
+.color-ft-red {
+    color: $clrRed;
+}
+.color-ft-orange {
+    color: $clrOrange;
+}
+.color-ft-lgray {
+    color: $clrLGray;
+}
+.color-ft-gray {
+    color: $clrGray;
+}
+.color-ft-dgray {
+    color: $clrDGray;
+}
+
+/////Borders
+.color-br-red {
+    border-color: $clrRed;
+}
+.color-br-orange {
+    border-color: $clrOrange;
+}
+.color-br-lgray {
+    border-color: $clrLGray;
+}
+.color-br-gray {
+    border-color: $clrGray;
+}
+.color-br-dgray {
+    border-color: $clrDGray;
+}
+.color-br-trans {
+    border-color: transparent;
+}
+
+/**************************************** General ****************************************/
+@import "template/fonts";
+@import "template/controls";
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh !important;
+
+    @extend .color-bg-lgray;
+    @extend .color-ft-dgray;
+    .ht-container {
+        @extend .color-bg-gray;
+        @extend .color-ft-dgray;
+        .ht-item {
+            @extend .color-br-lgray;
+            margin: 0.4rem 0rem;
+            padding: 0.24rem 0.4rem;
+            border-radius: 0.6rem;
+            border: solid 0.18rem;
+            .ht-close {
+                @extend .color-ft-red;
+                cursor: pointer;
+                margin: 0.2rem 0rem 0.2rem 0.8rem;
+            }
+        }
+    }
+    .ht-txt-title {
+        @extend .color-ft-orange;
+    }
+    .ht-txt-error {
+        @extend .color-ft-red;
+    }
+    .ht-txt-disable {
+        @extend .color-ft-gray;
+    }
+    .ht-btn-orange {
+        @extend .color-bg-orange;
+        @extend .color-ft-lgray;
+        @extend .color-br-orange;
+    }
+    .ht-btn-dgray {
+        @extend .color-bg-dgray;
+        @extend .color-ft-lgray;
+        @extend .color-br-dgray;
+    }
+    .ht-btn-red {
+        @extend .color-bg-red;
+        @extend .color-ft-lgray;
+        @extend .color-br-red;
+    }
+    .ht-btn-trans {
+        @extend .color-bg-trans;
+        @extend .color-ft-dgray;
+        @extend .color-br-dgray;
+    }
+    .ht-inp {
+        @extend .color-bg-lgray;
+        @extend .color-ft-dgray;
+        @extend .color-br-trans;
+    }
+    .ht-slc {
+        @extend .color-bg-lgray;
+        @extend .color-ft-dgray;
+        @extend .color-br-trans;
+    }
+    .ht-inp-error {
+        color: $clrRed !important;
+    }
+    ::placeholder {
+        @extend .color-ft-dgray;
+    }
+    .dropdown-menu {
+        @extend .color-bg-gray;
+        .dropdown-item {
+            @extend .color-ft-dgray;
+        }
+    }
+    a , th , td {
+        @extend .color-ft-dgray;
+    }
+}
+
+.ht-locked {
+    cursor: not-allowed;
+}
+/**************************************** Components ****************************************/
+@import "template/components/alert";
+
+@import "public/login";
+@import "template-home/home";
+@import "template-home/list";
+@import "template-home/view";
+@import "template-home/form";

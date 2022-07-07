@@ -1,0 +1,9 @@
+/*************** List ***************/
+.web-ht-list {
+    table thead {
+        .ht-inp {
+            @extend .color-bg-locked;
+            @extend .color-ft-lgray;
+        }
+    }
+}

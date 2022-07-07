@@ -1,0 +1,144 @@
+/*************** Controls ***************/
+.ht-btn {
+    width: fit-content !important;
+    border-style: solid;
+}
+.ht-inp-date , .ht-slc , .ht-chk , a {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+.ht-slc-labels {
+    @extend .fz-sm;
+    @extend .ht-slc;
+}
+.modal-content {
+    .modal-header , .modal-body {
+        justify-content: center;
+        text-align: center;
+    }
+    .modal-footer {
+        justify-content: space-evenly;
+    }
+}
+
+/*************** Controls Animations ***************/
+@keyframes btnHover {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+.ht-btn:hover {
+    animation-name: btnHover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@mixin responsiveControl($borderWidth, $paddingYLg, $paddingXLg, $borderRadiusLg, $widthSlcFltr, $widthDttmRng, $modalSpace) {
+    $paddingYSm: $paddingYLg * 0.75;
+    $paddingXSm: $paddingXLg * 0.25;
+    $borderRadiusSm: $borderRadiusLg * 0.75;
+    .ht-btn {
+        border-width: $borderWidth;
+    }
+    .ht-btn-lg {
+        padding: $paddingYLg $paddingXLg;
+        border-radius: $borderRadiusLg;
+    }
+    .ht-btn-sm {
+        padding: $paddingYSm $paddingXSm;
+        border-radius: $borderRadiusSm;
+    }
+    .ht-inp {
+        padding: $paddingYSm $paddingXSm;
+        border-radius: $borderRadiusSm;
+    }
+    .ht-slc {
+        padding: $paddingYSm $paddingXSm;
+        border-radius: $borderRadiusSm;
+    }
+    .ht-slc-labels {
+        width: $widthSlcFltr;
+    }
+    .ht-inp-date {
+        width: $widthDttmRng;
+    }
+    .modal-content {
+        border-radius: $modalSpace;
+        padding: $modalSpace * 0.5;
+    }
+}
+/*
+@media (min-width: 300px) { //XS
+    @include responsiveControl(0.13rem, 0.28rem, 1.4rem, 0.4rem, 5rem, 7.7rem, 1rem);
+    input[type=checkbox] {
+        transform: scale(1.1);
+        margin-right: 0rem;
+    }
+}
+
+@media (min-width: 576px) { //SM
+    @include responsiveControl(0.15rem, 0.3rem, 1.6rem, 0.45rem, 6rem, 8.5rem, 1.2rem);
+    input[type=checkbox] {
+        transform: scale(1.3);
+        margin-right: 0.2rem;
+    }
+}
+
+@media (min-width: 768px) { //MD
+    @include responsiveControl(0.16rem, 0.32rem, 1.8rem, 0.5rem, 6.6rem, 10rem, 1.3rem);
+    input[type=checkbox] {
+        transform: scale(1.4);
+        margin-right: 0.3rem;
+    }
+}
+*/
+@media (min-width: 992px) { //LG
+    @include responsiveControl(0.17rem, 0.36rem, 2rem, 0.55rem, 7rem, 10rem, 1.4rem);
+    input[type=checkbox] {
+        transform: scale(1.5);
+        margin-right: 0.4rem;
+    }
+}
+
+@media (min-width: 1200px) { //XL
+    @include responsiveControl(0.18rem, 0.4rem, 2.6rem, 0.6rem, 7rem, 10rem, 1.5rem);
+    input[type=checkbox] {
+        transform: scale(1.5);
+        margin-right: 0.4rem;
+    }
+}
+
+@media (min-width: 1400px) { //XXL
+    @include responsiveControl(0.18rem, 0.42rem, 3rem, 0.65rem, 7rem, 10.5rem, 1.6rem);
+    input[type=checkbox] {
+        transform: scale(1.55);
+        margin-right: 0.3rem;
+    }
+}
+
+@media (min-width: 2048px) { //2K
+    @include responsiveControl(0.2rem, 0.46rem, 3.3rem, 0.75rem, 7rem, 10.5rem, 2rem);
+    input[type=checkbox] {
+        transform: scale(1.55);
+        margin-right: 0.3rem;
+    }
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    @include responsiveControl(0.2rem, 0.52rem, 3.6rem, 0.85rem, 7rem, 10rem, 2rem);
+    input[type=checkbox] {
+        transform: scale(1.55);
+        margin-right: 0.3rem;
+    }
+}
+*/

@@ -1,0 +1,59 @@
+/*************** Alert ***************/
+.ht-alert {
+    position: fixed;
+    z-index: 2;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    a , p {
+        display: inline;
+        @extend .color-ft-lgray;
+    }
+    a {
+        cursor: pointer;
+    }
+}
+
+@mixin responsiveAlert($space) {
+    $space2: $space * 2;
+    .ht-alert {
+        padding: $space $space2;
+        border-radius: $space;
+        a {
+            margin-left: $space;
+        }
+    }
+}
+/*
+@media (min-width: 300px) { //XS
+    @include responsiveAlert(0.4rem);
+}
+
+@media (min-width: 576px) { //SM
+    @include responsiveAlert(0.4rem);
+}
+
+@media (min-width: 768px) { //MD
+    @include responsiveAlert(0.5rem);
+}
+*/
+@media (min-width: 992px) { //LG
+    @include responsiveAlert(0.6rem);
+}
+
+@media (min-width: 1200px) { //XL
+    @include responsiveAlert(0.6rem);
+}
+
+@media (min-width: 1400px) { //XXL
+    @include responsiveAlert(0.8rem);
+}
+
+@media (min-width: 2048px) { //2K
+    @include responsiveAlert(0.8rem);
+}
+/*
+@media (min-width: 2560px) { //XXXL
+    @include responsiveAlert(1rem);
+}
+*/
